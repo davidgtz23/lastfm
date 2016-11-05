@@ -3,16 +3,31 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Last Fm</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	
-	<top-artists></top-artists>
+	<header>
+		<img src="http://www.last.fm/static/images/logo_animate_mob.gif" alt="Last FM">
+	</header>
 
+	<main>
+		<top-artists></top-artists>
+		<top-tracks></top-tracks>
+	</main>
+
+	<footer>
+		<img src="http://devf.mx/assets/devf-logo.png" alt="Dev.f">
+	</footer>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-resource.min.js"></script>
 	<script src="js/app.js"></script>
 	<script src="components/topartists.component.js"></script>
 	<script src="factories/topartists.factory.js"></script>
+	<script src="components/toptracks.component.js"></script>
+	<script src="factories/toptracks.factory.js"></script>
 </body>
 </html>

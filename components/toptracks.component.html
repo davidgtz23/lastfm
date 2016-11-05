@@ -1,11 +1,11 @@
 <section>
-	<h2>TOP 10 ARTISTAS</h2>
+	<h2>TOP 10 CANCIONES</h2>
 	<ul>
 		<li ng-repeat="char in $ctrl.characters | limitTo:10">
 			<a href="{{char.url}}" target="_blank">
 				<img ng-src="{{char.image[3]['#text']}}" alt="{{char.name}}">
 				<p>
-					{{char.name}}
+					{{char.name}} - {{char.artist.name}}
 				</p>
 				<div><span>{{$index + 1}}</span></div>
 			</a>
